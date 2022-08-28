@@ -554,7 +554,7 @@ def handle_message(event):
         if event.message.text == "aa":
             line_bot_api.reply_message(event.reply_token,TextSendMessage(txt1+txt2+txt3+txt6))
 
-        line_bot_api.reply_message(event.reply_token, carousel_template_message)
+    line_bot_api.reply_message(event.reply_token, carousel_template_message)
     except Exception as e:
        print(e)
 
