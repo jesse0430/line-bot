@@ -42,7 +42,7 @@ def handle_message(event):
     global buttons_template
     txt4='30年以下,10年以下,20年以下,其他屋齡,10坪以下,20坪以下,30坪以下,40坪以下,其他坪數,500萬以下,1000萬以下,1500萬以下,2000萬以下,其他總價,20萬元以下,30萬元以下,40萬元以下,其他單價'
 
-    
+    try:
         if event.message.text == "我要查詢":
             carousel_template_message = TemplateSendMessage(
                 alt_text='台中 template',
